@@ -4,6 +4,7 @@ import { globalStyles } from '../../theme/theme';
 import { DrawerActions, NavigationProp, useNavigation } from '@react-navigation/native';
 import { PrimaryButton } from '../../components/shared/PrimaryButton';
 import { RootStackParams } from '../../routes/StackNavigator';
+import { IonIcon } from '../../components/shared/IonIcon';
 
 export const HomeScreen = () => {
 
@@ -12,8 +13,8 @@ export const HomeScreen = () => {
   useEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
-        <Pressable onPress={ () => navigation.dispatch( DrawerActions.toggleDrawer ) }>
-          <Text>Menu</Text>
+        <Pressable style={{ marginLeft:15 }} onPress={ () => navigation.dispatch( DrawerActions.toggleDrawer ) }>
+          <IonIcon name="menu-outline" />
         </Pressable>
       )
     })
