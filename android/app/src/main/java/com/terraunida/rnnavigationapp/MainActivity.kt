@@ -1,4 +1,4 @@
-package com.navigationapp
+package com.terraunida.rnnavigationapp
 import android.os.Bundle;
 
 import com.facebook.react.ReactActivity
